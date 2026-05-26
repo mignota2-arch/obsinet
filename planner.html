@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner - Discover Ethiopia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="booking.html">Book Trip</a>
+    <a href="planner.html">Trip Planner</a>
+    <a href="reviews.html">Reviews</a>
+</nav>
+
+<section class="hero hero-planner">
+    <div class="hero-text">
+        <h1>Say Yes To Adventure</h1>
+    </div>
+</section>
+
+<section class="content">
+    <h2>Itinerary Builder</h2>
+    <input type="text" id="trip-name" placeholder="Trip Name">
+    <input type="number" id="budget" placeholder="Your Budget (ETB)">
+    <textarea id="activities" rows="6" placeholder="Activities and places you want to visit..."></textarea>
+    <button onclick="saveFav()">Save My Plan</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

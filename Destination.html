@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Discover Ethiopia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; }
+
+        nav {
+            background: #1e3a8a;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 60vh;
+            background-image: url('https://i.redd.it/g7ful3d57e7z.jpg'); /* Injera Background */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+        .hero-text {
+            z-index: 2;
+        }
+        .hero-text h1 {
+            font-size: 3.8rem;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 40px;
+        }
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 12px 0 8px;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="booking.html">Book Trip</a>
+    <a href="planner.html">Trip Planner</a>
+    <a href="reviews.html">Reviews</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>Make Your Tour Amazing With Us</h1>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Popular Destinations in Ethiopia</h2>
+    <div class="destinations-grid">
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/04/31/90/65/360_F_431906519_S90ySveD85FC0jZ1SmE9PWrlThYzXpjq.jpg" alt="Gondar">
+            <h3>Gondar</h3>
+            <p>Best Time: Oct - Feb</p>
+        </div>
+        <div class="card">
+            <img src="https://facts.net/wp-content/uploads/2025/04/38-facts-about-lalibela-1744208038.jpg" alt="Lalibela">
+            <h3>Lalibela</h3>
+            <p>Best Time: Sep - Jan</p>
+        </div>
+        <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.AZe_3qRt_dcba7FDLG9cCwHaEK?pid=Api&h=220&P=0" alt="Addis Ababa">
+            <h3>Addis Ababa</h3>
+            <p>Best Time: Year-round</p>
+        </div>
+        <div class="card">
+            <img src="https://www.reviewofreligions.org/wp-content/uploads/2020/11/Aksum-2-shutterstock_1044235618-scaled-e1607025988330.jpg" alt="Axum">
+            <h3>Axum</h3>
+            <p>Best Time: Oct - Mar</p>
+        </div>
+        <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.xvx_hB97JeUzUxNPw2pDcgHaE8?pid=Api&h=220&P=0" alt="Harar">
+            <h3>Harar</h3>
+            <p>Best Time: Oct - Feb</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

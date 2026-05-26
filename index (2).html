@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ethiopia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; }
+        
+        nav {
+            background: #1e3a8a;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: ''; position: absolute; top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero-text { z-index: 2; }
+        .hero-text h1 { font-size: 4.5rem; text-shadow: 0 4px 15px rgba(0,0,0,0.8); }
+
+        .content { 
+            padding: 60px 20px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            text-align: center; 
+            line-height: 1.8;
+        }
+
+        .contact-section {
+            background: #1e3a8a;
+            color: white;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="booking.html">Book Trip</a>
+    <a href="planner.html">Trip Planner</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>Discover Ethiopia</h1>
+        <p>Land of Origins • Rich Culture • Timeless Beauty</p>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Welcome to Discover Ethiopia</h2>
+    <p>We believe that travel changes your perspective, but planning it shouldn't change your sanity.</p>
+    <p>This site was born out of a passion for exploring the world and a frustration with complicated, generic travel advice. We wanted to create a space that skips the tourist traps and cuts straight to what actually makes a trip unforgettable.</p>
+</div>
+
+<div class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +251 097 865 4334</p>
+    <p><strong>Email:</strong> info@discoverethiopia.com</p>
+    <p><strong>Address:</strong> Addis Ababa, Ethiopia</p>
+</div>
+
+</body>
+</html>

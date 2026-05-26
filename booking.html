@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Trip - Discover Ethiopia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="booking.html">Book Trip</a>
+    <a href="planner.html">Trip Planner</a>
+    <a href="reviews.html">Reviews</a>
+</nav>
+
+<section class="hero hero-booking">
+    <div class="hero-text">
+        <h1>Step Into Adventure</h1>
+    </div>
+</section>
+
+<section class="content">
+    <h2>Book Your Trip</h2>
+    <input type="text" id="name" placeholder="Full Name">
+    <select id="destination">
+        <option value="">Select Destination</option>
+        <option>Gondar</option>
+        <option>Lalibela</option>
+        <option>Addis Ababa</option>
+        <option>Axum</option>
+        <option>Harar</option>
+    </select>
+    <input type="date" id="departure">
+    <input type="date" id="return">
+    <select id="service">
+        <option value="">Select Package</option>
+        <option>Hotel + Flight</option>
+        <option>Hotel Only</option>
+        <option>Flight Only</option>
+        <option>Full Tour Package</option>
+    </select>
+    <input type="number" id="price" placeholder="Price">
+    <select id="currency">
+        <option value="ETB">ETB - Ethiopian Birr</option>
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - British Pound</option>
+    </select>
+    <button onclick="bookTrip()">Proceed to Secure Checkout</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
